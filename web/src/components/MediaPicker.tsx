@@ -1,5 +1,3 @@
-'use client'
-
 import { ChangeEvent, useState } from 'react'
 
 export function MediaPicker() {

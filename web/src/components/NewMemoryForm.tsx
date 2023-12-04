@@ -1,5 +1,3 @@
-'use client'
-
 import { Camera } from 'lucide-react'
 import { MediaPicker } from './MediaPicker'
 import { FormEvent } from 'react'

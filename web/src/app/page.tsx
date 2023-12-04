@@ -5,9 +5,9 @@ import { api } from '@/lib/api'
 import { cookies } from 'next/headers'
 import dayjs from 'dayjs'
 import ptBr from 'dayjs/locale/pt-br'
-import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Pencil, X } from 'lucide-react'
+import Image from 'next/image'
 
 dayjs.locale(ptBr)
 
@@ -48,7 +48,7 @@ export default async function Home() {
                 {dayjs(memory.createdAt).format('D[ de ]MMMM[, ]YYYY')}
               </time>
               <span className="right-0 flex gap-2">
-                {/* <Link
+                <Link
                   title="edit"
                   href="/memories/edit"
                   className="border-1 flex h-6 w-6 items-center justify-center rounded-full border-black bg-purple-800 text-sm text-gray-200 hover:bg-purple-300 hover:text-gray-800"
@@ -62,7 +62,7 @@ export default async function Home() {
                   className="border-1 flex h-6 w-6 items-center justify-center rounded-full border-black bg-gray-300 text-sm text-gray-200 hover:bg-gray-100 hover:text-gray-800"
                 >
                   <X className="h-4 w-4" />
-                </Link> */}
+                </Link>
               </span>
             </span>
             <Image
